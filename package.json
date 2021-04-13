@@ -8,7 +8,9 @@
     "@testing-library/user-event": "^12.8.3",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
+    "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.3",
+    "router": "^1.3.5",
     "web-vitals": "^1.1.1"
   },
   "scripts": {
@@ -37,7 +39,6 @@
   },
   "description": "Projeto proposto pela Raízen em colaboração com as Formadas da Laboratória.",
   "main": "index.js",
-  "devDependencies": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Elis-ctrl/da-uma-luz.git"
