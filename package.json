@@ -34,5 +34,18 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "description": "Projeto proposto pela Raízen em colaboração com as Formadas da Laboratória.",
+  "main": "index.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Elis-ctrl/da-uma-luz.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Elis-ctrl/da-uma-luz/issues"
+  },
+  "homepage": "https://github.com/Elis-ctrl/da-uma-luz#readme"
 }
