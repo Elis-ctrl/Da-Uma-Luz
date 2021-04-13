@@ -1,52 +1,38 @@
 {
-  "name": "d-uma-luz",
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "@testing-library/jest-dom": "^5.11.10",
-    "@testing-library/react": "^11.2.6",
-    "@testing-library/user-event": "^12.8.3",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
-    "react-router-dom": "^5.2.0",
-    "react-scripts": "4.0.3",
-    "router": "^1.3.5",
-    "web-vitals": "^1.1.1"
-  },
+  "name": "social-network",
+  "version": "1.0.0",
+  "description": "Social Network @ Laboratoria",
+  "main": "src/index.html",
+  "keywords": [
+    "javascript",
+    "firebase",
+    "jest"
+  ],
+  "license": "MIT",
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "htmlhint": "htmlhint dist/*.html ",
+    "eslint": "eslint --ext .js src/ test/",
+    "stylelint": "stylelint --aei src/**/*.css",
+    "pretest": "npm run htmlhint && npm run eslint && npm run stylelint",
+    "test": "jest --coverage",
+    "start": "firebase serve --only hosting"
   },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
+  "devDependencies": {
+    "@babel/core": "^7.11.4",
+    "@babel/preset-env": "^7.11.0",
+    "babel-jest": "^26.3.0",
+    "eslint": "^7.7.0",
+    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-jest": "^24.1.0",
+    "htmlhint": "^0.14.0",
+    "jest": "^26.4.2",
+    "regenerator-runtime": "^0.13.1",
+    "serve": "^11.0.2",
+    "stylelint": "^13.6.1",
+    "stylelint-config-recommended": "^3.0.0"
   },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  },
-  "description": "Projeto proposto pela Raízen em colaboração com as Formadas da Laboratória.",
-  "main": "index.js",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Elis-ctrl/da-uma-luz.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Elis-ctrl/da-uma-luz/issues"
-  },
-  "homepage": "https://github.com/Elis-ctrl/da-uma-luz#readme"
+  "engines": {
+    "node": ">=10"
+  }
 }
