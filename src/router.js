@@ -1,13 +1,12 @@
-// Este é seu ponto de entrada da sua aplicação
 import { Home } from './pages/home/index.js';
-import { Login } from './pages/login/index.js';
+import { Register } from './pages/register/index.js';
 import { onNavigate } from './utils/history.js';
 
 const routeRender = () => {
   const rootDiv = document.getElementById('root');
   const routes = {
-    '/' : Home,
-    '/login': Login,
+    '/': Home,
+    '/register': Register,
 
   };
 
@@ -21,13 +20,13 @@ window.addEventListener('load', () => {
     .getElementById('home')
     .addEventListener('click', (e) => {
       e.preventDefault();
-      onNavigate('/')
+      onNavigate('/');
     });
   document
-    .getElementById('login')
+    .getElementById('register')
     .addEventListener('click', (e) => {
       e.preventDefault();
-      onNavigate('/login')
+      onNavigate('/register');
     });
 
   routeRender();

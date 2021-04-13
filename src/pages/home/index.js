@@ -1,8 +1,11 @@
 export const Home = () => {
-  // Coloque sua página
   const rootElement = document.createElement('div');
+  Home.classList.add('container');
+
   rootElement.innerHTML = `
-      <h1>Olá, mundo!</h1>
+      <aside class='home-element'>
+      <p>Texto dentro do elemento</p>
+      </aside>
   `;
   return rootElement;
 };
