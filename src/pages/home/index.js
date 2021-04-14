@@ -1,6 +1,9 @@
+import ListPolutionCities from '../../services/api.js';
+
 export const Home = () => {
   const rootElement = document.createElement('div');
-  Home.classList.add('container');
+
+  ListPolutionCities('guarulhos');
 
   rootElement.innerHTML = `
       <aside class='home-element'>

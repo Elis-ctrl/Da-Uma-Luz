@@ -8,3 +8,7 @@ export const myFunction = () => {
 export const createProfile = (email, name, consumption) => firebase
   .auth()
   .createUserWithEmailAndPassword(email, name, consumption);
+
+// let input = document.getElementsByClassName('input').value;
+// let button = document.getElementsByClassName('submit');
+// let show = document.getElementsByClassName('result')
