@@ -1,6 +1,6 @@
 export const Register = () => {
   const rootElement = document.createElement('div');
-  Register.classList.add('container');
+  // Register.classList.add('container');
 
   rootElement.innerHTML = `
   <div>
