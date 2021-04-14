@@ -1,14 +1,12 @@
-// exporte suas funções
+const collection = 'users';
 
-export const myFunction = () => {
-  // seu código aqui
-  console.log('Olá mundo!');
+export const addData = (user) => {
+  firebase.firestore().collection(collection)
+    .add(user)
+    .then((docRef) => {
+      console.log('inserido', docRef.id);
+    })
+    .catch((error) => {
+      console.log(error);
+    });
 };
-
-export const createProfile = (email, name, consumption) => firebase
-  .auth()
-  .createUserWithEmailAndPassword(email, name, consumption);
-
-// let input = document.getElementsByClassName('input').value;
-// let button = document.getElementsByClassName('submit');
-// let show = document.getElementsByClassName('result')
