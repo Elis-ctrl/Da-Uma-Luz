@@ -1,11 +1,13 @@
-import { Home } from './pages/home/index.js';
+import { Depoimentos } from './pages/depoimentos/index.js';
+import { Energy } from './pages/energy/index.js';
 import { Register } from './pages/register/index.js';
 import { onNavigate } from './utils/history.js';
 
 const routeRender = () => {
   const rootDiv = document.getElementById('root');
   const routes = {
-    '/': Home,
+    '/': Energy,
+    '/depoimentos': Depoimentos,
     '/register': Register,
 
   };
@@ -17,10 +19,16 @@ const routeRender = () => {
 window.addEventListener('popstate', routeRender);
 window.addEventListener('load', () => {
   document
-    .getElementById('home')
+    .getElementById('energy')
     .addEventListener('click', (e) => {
       e.preventDefault();
       onNavigate('/');
+    });
+  document
+    .getElementById('depoimentos')
+    .addEventListener('click', (e) => {
+      e.preventDefault();
+      onNavigate('/depoimentos');
     });
   document
     .getElementById('register')
