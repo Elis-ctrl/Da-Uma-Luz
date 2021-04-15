@@ -50,7 +50,7 @@ export const Home = () => {
       </div>
     </div>
       <section class='energy-info'>
-        <p>
+        <p class="button-energy">
           <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseExample">
             BIOENERGIA
           </button>
