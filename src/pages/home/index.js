@@ -1,8 +1,8 @@
+// pages/home/index.js
 import ListPolutionCities from '../../services/api.js';
 
 export const Home = () => {
   const rootElement = document.createElement('div');
-
   rootElement.innerHTML = `
   <main class='home-element'>
     <div class='rectangle' >
@@ -182,6 +182,7 @@ export const Home = () => {
   `;
 
   const show = document.getElementById('result');
+
   const element = document.getElementById('submit');
   element.addEventListener('click', () => {
     const input = document.getElementById('input').value;
@@ -195,6 +196,5 @@ export const Home = () => {
     response();
   });
   ListPolutionCities('guarulhos');
-
   return rootElement;
 };
