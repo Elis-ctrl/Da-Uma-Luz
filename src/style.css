@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
 
 * {
   margin: 0;
@@ -14,6 +14,39 @@ body{
   display: flex;
   min-width: 50vh;
   justify-content: center;
+}
+
+#home-element{
+  display: flex;
+  direction: initial;
+}
+/* Rectangle 1 */
+
+div.rectangle{
+  position: absolute;
+  width: 358.46px;
+  height: 582.89px;
+  left: -38.86px;
+  top: -51.47px;
+  background: #A750AD;
+  border-radius: 58px;
+  transform: rotate(0.38deg);
+  margin-bottom: 5rem
+}
+
+.rectangle-text{
+  
+  width: 257px;
+  height: 258px;
+  left: 30px;
+  top: 210px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 32px;
+  line-height: 37px;
+  text-align: center;
+  color: #FFFFFF;
 }
 
 div{
@@ -70,4 +103,60 @@ form input {
 
 .button:hover{
   background: violet;
+}
+
+#input{
+  position: absolute;
+  width: 270px;
+  height: 29px;
+  left: 46px;
+  top: 274px;
+  background: #FFFFFF;
+  border: 2px solid #9C80BE;
+  box-sizing: border-box;
+  border-radius: 5px;
+  padding-left: 10px;
+}
+#submit {
+  position: absolute;
+  width: 114px;
+  height: 30px;
+  left: 330px;
+  top: 273px;
+  background: #43236A;
+  border-radius: 3px;
+}
+
+#results{
+  position: absolute;
+  width: 270px;
+  height: 29px;
+  left: 46px;
+  top: 329px;
+  background: #FFFFFF;
+  border: 2px solid #9C80BE;
+  box-sizing: border-box;
+  border-radius: 5px;
+  padding-left: 10px;
+}
+
+/* Carousel */
+
+#items-wrapper{
+  width: 90vw;
+}
+
+#items{
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+}
+
+.carousel-item{
+  border-radius: 10px;
+  background-color: #A750AD;
+  width: 100%;
+  height: 600px;
+  padding: 60px;
 }
