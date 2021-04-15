@@ -1,21 +1,21 @@
-import ListPolutionCities from '../../services/api.js';
+// import ListPolutionCities from '../../services/api.js';
 
 export const Home = () => {
   const rootElement = document.createElement('div');
-  const show = document.getElementById('result');
-  const element = document.getElementById('submit');
-  element.addEventListener('click', () => {
-    const input = document.getElementById('input').value;
-    const response = async () => {
-      await ListPolutionCities(input).then((r) => {
-        show.innerHTML = `
-        <p id='results'>${r}</p>
-        `;
-      });
-    };
-    response();
-  });
-  ListPolutionCities('guarulhos');
+  // const show = document.getElementById('result');
+  // const element = document.getElementById('submit');
+  // element.addEventListener('click', () => {
+  //   const input = document.getElementById('input').value;
+  //   const response = async () => {
+  //     await ListPolutionCities(input).then((r) => {
+  //       show.innerHTML = `
+  //       <p id='results'>${r}</p>
+  //       `;
+  //     });
+  //   };
+  //   response();
+  // });
+  // ListPolutionCities('guarulhos');
   rootElement.innerHTML = `
   <main class='home-element'>
     <div class='rectangle' >
@@ -49,50 +49,53 @@ export const Home = () => {
       </div>
     </div>
       <section class='energy-info'>
-        <p class="button-energy">
-          <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseExample">
-            BIOENERGIA
+        <div class="button-energy">
+          <button class="btn btn-outline-primary" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseExample">
+            <img class="icon-button" src="/assets/herbs-outline.gif" alt=bioenergia">
+            Bioenergia
           </button>
-          <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseExample">
-            BIOGÁS
+          <button class="btn btn-outline-primary" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseExample">
+            <img class="icon-button" src="/assets/arrow-rounded.gif" alt=bioenergia">
+            Biogás
           </button>
-          <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseExample">
-            BIOMASSA
+          <button class="btn btn-outline-primary" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseExample">
+            <img class="icon-button" src="/assets/commodity-outline.gif" alt=bioenergia">
+            Biomassa
           </button>
-          <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseExample">
-            ENERGIA SOLAR
+          <button class="btn btn-outline-primary" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseExample">
+          <img class="icon-button" src="/assets/solar-panel-outline.gif" alt=bioenergia">
+            Energia Solar
           </button>
-        </p>
+        </div>
         <div class="collapse" id="collapseOne">
           <div class="card card-body">
-            BIOENERGIA
-            A  raízen é a maior produtora de energia gerada a partir do bagaço da cana-de-açúcar, aproveitando os coprodutos da cana que são gerados a partir da produçãoo de açúcar e etanol, com capacidade atual para abastecer uma cidade como a do Rio de Janeiro por um ano, por meio de uma fonte constante e previsível, que tem seu pico de produção justamente no período mais seco do ano, quando a matriz hídrica fica mais pressionada.
-            É uma energia limpa que reduz a emissão de CO2, um composto químico gasoso que provoca desequilíbrios no efeito estufa e a colheita da cana acontece em períodos que os reservatórios estão em baixa.
+            <h2>Bioenergia</h2>
+            <p>A  raízen é a maior produtora de energia gerada a partir do bagaço da cana-de-açúcar, aproveitando os coprodutos da cana que são gerados a partir da produçãoo de açúcar e etanol, com capacidade atual para abastecer uma cidade como a do Rio de Janeiro por um ano, por meio de uma fonte constante e previsível, que tem seu pico de produção justamente no período mais seco do ano, quando a matriz hídrica fica mais pressionada.
+            É uma energia limpa que reduz a emissão de CO2, um composto químico gasoso que provoca desequilíbrios no efeito estufa e a colheita da cana acontece em períodos que os reservatórios estão em baixa.</p>
           </div>
         </div>
         <div class="collapse" id="collapseTwo">
           <div class="card card-body">
-            BIOGÁS
-            O biogás é resultado de um complexo processo produtivo, em que biodigestores convertem a matéria orgânica proveniente dos processamentos da cana-de-açúcar, como a torta de filtro (resíduos restantes da purificação do caldo da cana) e a vinhaça (água restante do processo de destilação), em metano e CO2, o chamado biogás. Contribuí para tornar a matriz energética brasileira mais limpa, aumentando o potencial de energia elétrica
+            <h2>Biogás</h2>
+            <p>O biogás é resultado de um complexo processo produtivo, em que biodigestores convertem a matéria orgânica proveniente dos processamentos da cana-de-açúcar, como a torta de filtro (resíduos restantes da purificação do caldo da cana) e a vinhaça (água restante do processo de destilação), em metano e CO2, o chamado biogás. Contribuí para tornar a matriz energética brasileira mais limpa, aumentando o potencial de energia elétrica
             Quando em motogeradores, esse biogás é transformado em energia elétrica limpa e é por isso que temos nossa planta de biogás em Guariba, em São Paulo, com 21 MW de capacidade instalada. Além de ser uma grande fonte de energia renovável, é um substituto do diesel na forma de biometano.
             São dois processos distintos:
             Nos biorreatores verticais (equipamento onde ocorre uma série de reações químicas), são realizadas as biodigestão anaeróbica de torta de filtro, na presença de bactérias, transformando a biomassa da torta em gás.
             Antes da combustão nos motogeradores esse gás passa por um outro processo, de dessufurização, onde ficará pronto para ser inserido em motores onde o gás será queimado e a energia gerada.
             Já a vinhaça, vinda do caldo de cana de açucar, alimenta lagoas de biodigestão. Bactérias presentes no local transformam a matéria orgânica em gás rico em metano. Esse gás precisa ser purificado, após isso ocorre a queima, onde se origina a eletricidade.
-            No fim deste processo o subproduto é um adubo turbinado rico em potássio e nitrogênio (compostos orgânicos que dão energia as plantas), que volta a fertilizar o campo. 
+            No fim deste processo o subproduto é um adubo turbinado rico em potássio e nitrogênio (compostos orgânicos que dão energia as plantas), que volta a fertilizar o campo.</p>
           </div>
         </div>
         <div class="collapse" id="collapseThree">
           <div class="card card-body">
-            BIOMASSA
-            Biomassa é todo tipo de matéria orgânica que possibilita a produção de energia, sendo ela não fóssil. A energia de biomassa, que já responde por 6% da matriz energética nacional, é obtida pela queima de materiais orgânicos, como bagaço de cana, casca de arroz e cavaco de madeira. Em comparação com os combustíveis fósseis, esses resíduos geram menos emissões de gases causadores do efeito estufa.
+            <h2>Biomassa</h2>
+            <p>Biomassa é todo tipo de matéria orgânica que possibilita a produção de energia, sendo ela não fóssil. A energia de biomassa, que já responde por 6% da matriz energética nacional, é obtida pela queima de materiais orgânicos, como bagaço de cana, casca de arroz e cavaco de madeira. Em comparação com os combustíveis fósseis, esses resíduos geram menos emissões de gases causadores do efeito estufa.</p>
           </div>
         </div>
         <div class="collapse" id="collapseFour">
           <div class="card card-body">
-            ENERGIA SOLAR
-            Em mais um passo para o futuro, desenvolvemos a maior planta de energia solar do estado de São Paulo, um projeto piloto em Piracicaba. Sua potência instalada é de 1,3 MWp, suficiente para abastecer um bairro da cidade por um ano. São 3.800 placas solares ocupando um espaço de 40 mil m², o equivalente a dois campos de futebol. Com a planta, alcançamos um novo nível de inovação, que representa a busca por uma gestão energética mais sustentável, baseada em energia limpa, perene e econômica.
-          </div>
+            <h2>Energia solar</h2>
+            <p>Em mais um passo para o futuro, desenvolvemos a maior planta de energia solar do estado de São Paulo, um projeto piloto em Piracicaba. Sua potência instalada é de 1,3 MWp, suficiente para abastecer um bairro da cidade por um ano. São 3.800 placas solares ocupando um espaço de 40 mil m², o equivalente a dois campos de futebol. Com a planta, alcançamos um novo nível de inovação, que representa a busca por uma gestão energética mais sustentável, baseada em energia limpa, perene e econômica.</p>
         </div>
       </section>
       <p>

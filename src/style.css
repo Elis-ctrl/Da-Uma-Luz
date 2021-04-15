@@ -161,13 +161,17 @@ form input {
   padding: 60px;
 }
 
+.btn btn-primary{
+  background: #FFFFFF;
+  border: #9C80BE solid 2px;
+  color: #43236A;
+  margin-left: 30%;
+}
 
-.button-energy button{
-  background-color: #FFFFFF;
-  border: solid 1px #9C80BE;
+.icon-button{
+  width: 60px;
 }
 
 .depoiments {
   color: white;
-
 }
