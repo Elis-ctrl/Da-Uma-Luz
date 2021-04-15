@@ -49,7 +49,7 @@ export const Form = () => {
     };
     addData(user);
 
-    onNavigate('/');
+    onNavigate('/clapping');
   });
 
   return rootElement;
