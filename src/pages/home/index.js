@@ -1,9 +1,8 @@
 import ListPolutionCities from '../../services/api.js';
 
-const rootElement = document.createElement('div');
-const show = document.getElementById('result');
-
 export const Home = () => {
+  const rootElement = document.createElement('div');
+  const show = document.getElementById('result');
   const element = document.getElementById('submit');
   element.addEventListener('click', () => {
     const input = document.getElementById('input').value;
@@ -23,7 +22,7 @@ export const Home = () => {
       <h1 class='rectangle-text'>Descubra tudo sobre energia renovável e qual a melhor opção para seu negócio ser mais sustentável</h1>
     </div>
     <div class='logo'> 
-      <img class='img-logo' src="./assets/LOGO_ROXO.png">
+      <img class='img-logo' src="./assets/logo-branco.png">
     </div>
     <div>
       <p class='title'></p>
@@ -125,7 +124,7 @@ export const Home = () => {
       </p>
       <section class="body">
       <div class='logo'> 
-        <img class='img-logo' src="./assets/LOGO_ROXO.png">
+        <img class='img-logo' src="./assets/logo-roxo.png">
       </div>
       <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
@@ -140,7 +139,7 @@ export const Home = () => {
           </div>
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <p class"depositions">
+            <p class="depoiments">
               “Para além dos selos e certificações de sustentabilidade, 
               a minha microempresa reduziu consideravelmente os gastos com impostos, 
               tendo em vista que as pequenas empresas sofrem com as altas tarifas na energia elétrica.
@@ -149,7 +148,7 @@ export const Home = () => {
             </p>
           </div>
           <div class="carousel-item">
-            <p class"depoiments">
+            <p class="depoiments">
               “Aqui em Goianésia, a companhia que fornece energia cobra um valor muito alto 
               e não oferecia um serviço de qualidade. Quando soube sobre energias renováveis, 
               pesquisei bastante, mas a Raízen, me fornece um produto de qualidade, com valor 
@@ -160,7 +159,7 @@ export const Home = () => {
             </p>
           </div>
           <div class="carousel-item">
-            <p class"depoiments">
+            <p class="depoiments">
               “Procurava um serviço que agregasse ainda mais valor à minha doceria vegana, 
               pois para nós a questão ambiental é imprescindível. Quando um fornecedor comentou 
               comigo dos beneficios que teve depois de fechar parceria com a Raízen, eu imediatamente 
