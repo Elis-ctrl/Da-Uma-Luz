@@ -10,11 +10,7 @@ export const Home = () => {
         <h1 class='rectangle-text'>Descubra tudo sobre energia renovável e qual a melhor opção para seu negócio ser mais sustentável</h1>
       </div>
 
-      <div class='about-air'>
-        <input id='input'>
-        <button id='submit'>clique aqui</button>
-        <p id='result'></p>
-      </div>
+      
       
       <button class="btn btn-default">
         <img src="/src/assets/seta.gif" width="20" />
@@ -40,6 +36,12 @@ export const Home = () => {
               <li>Os preços são estáveis por mais tempo já que uma vez construídas, a manutenção das instalações são mais baratas e o combustível muitas vezes grátis;</li>
             </ul>
           </h5>
+          <div class='about-air'>
+            <p>Verifique aqui a qualidade do ar na sua cidade</p>
+            <input id='input' placeholder='São Paulo, Guarulhos etc...'>
+            <button id='submit'>clique aqui</button>
+            <p id='result'></p>
+          </div>
         </div>
       </div>
       <section class='energy-info'>

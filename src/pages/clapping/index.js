@@ -6,6 +6,7 @@ export const Clapping = () => {
   rootElement.innerHTML = `
   <div>
     <img class="img-logo" src='./assets/applause-outline.gif'>   
+    <p class='clapping-text'> Parabéns, nossa equipe entrará em contato com você!!</p>
       <input class='button' 
       id='back' type='submit' 
       value='Voltar'/>
