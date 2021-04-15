@@ -1,17 +1,27 @@
-// pages/home/index.js
 import ListPolutionCities from '../../services/api.js';
 
+const rootElement = document.createElement('div');
+const show = document.getElementById('result');
+
 export const Home = () => {
-  const rootElement = document.createElement('div');
+  const element = document.getElementById('submit');
+  element.addEventListener('click', () => {
+    const input = document.getElementById('input').value;
+    const response = async () => {
+      await ListPolutionCities(input).then((r) => {
+        show.innerHTML = `
+        <p id='results'>${r}</p>
+        `;
+      });
+    };
+    response();
+  });
+  ListPolutionCities('guarulhos');
   rootElement.innerHTML = `
   <main class='home-element'>
     <div class='rectangle' >
       <h1 class='rectangle-text'>Descubra tudo sobre energia renovável e qual a melhor opção para seu negócio ser mais sustentável</h1>
     </div>
-    <input tipe=city>
-    <p id='result' id='input'></p>
-    <button id='submit'>Go</button>
-
     <div class='logo'> 
       <img class='img-logo' src="./assets/LOGO_ROXO.png">
     </div>
@@ -39,7 +49,6 @@ export const Home = () => {
         </h5>
       </div>
     </div>
-
       <section class='energy-info'>
         <p>
           <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseExample">
@@ -67,11 +76,9 @@ export const Home = () => {
             BIOGÁS
             O biogás é resultado de um complexo processo produtivo, em que biodigestores convertem a matéria orgânica proveniente dos processamentos da cana-de-açúcar, como a torta de filtro (resíduos restantes da purificação do caldo da cana) e a vinhaça (água restante do processo de destilação), em metano e CO2, o chamado biogás. Contribuí para tornar a matriz energética brasileira mais limpa, aumentando o potencial de energia elétrica
             Quando em motogeradores, esse biogás é transformado em energia elétrica limpa e é por isso que temos nossa planta de biogás em Guariba, em São Paulo, com 21 MW de capacidade instalada. Além de ser uma grande fonte de energia renovável, é um substituto do diesel na forma de biometano.
-
             São dois processos distintos:
             Nos biorreatores verticais (equipamento onde ocorre uma série de reações químicas), são realizadas as biodigestão anaeróbica de torta de filtro, na presença de bactérias, transformando a biomassa da torta em gás.
             Antes da combustão nos motogeradores esse gás passa por um outro processo, de dessufurização, onde ficará pronto para ser inserido em motores onde o gás será queimado e a energia gerada.
-
             Já a vinhaça, vinda do caldo de cana de açucar, alimenta lagoas de biodigestão. Bactérias presentes no local transformam a matéria orgânica em gás rico em metano. Esse gás precisa ser purificado, após isso ocorre a queima, onde se origina a eletricidade.
             No fim deste processo o subproduto é um adubo turbinado rico em potássio e nitrogênio (compostos orgânicos que dão energia as plantas), que volta a fertilizar o campo. 
           </div>
@@ -89,13 +96,11 @@ export const Home = () => {
           </div>
         </div>
       </section>
-
       <p>
         Qual é a melhor opção para meu negógio?
         -Consumidores com sua tensão ABAIXO de R$40.000 mensais, têm a opção de utilizar a energia solar economizando até 20%, utilizando o processo de Geração Distribuída.
         -Consumidores com sua tensão ACIMA de R$40.000 mensais, devem migrar para o processo do mercado livre. É uma forma livre de consumir energia em que você pode escolher seu fornecedor de energia, preço, garantia, pagamento e prazo, podendo assim economizar até 30% dos gastos.
       </p>
-
       <p>
         Por que a Raízen?
         Os processos na Raízen buscam atingir o ideal de que, nada se perde, nada se cria e tudo se transforma. Com esses movimentos de criação de energias renováveis, a Raízen segue se consolidando como uma empresa integrada de energia, contribuindo para uma matriz energética mais limpa, assumindo uma posição de destaque ampliando seu portifólio de renováveis, liderando o processo de transição energética e descarbonização, acelerando o futuro.
@@ -118,7 +123,6 @@ export const Home = () => {
         -Fechando negócio com a Raízen, você consome energia limpa e ainda recebe desconto nas taxas;
         -Ser consumidor de uma empresa que zela por um produto de qualidade, que trás confiança e acompanhamento personalizado ao cliente.
       </p>
-
       <section class="body">
       <div class='logo'> 
         <img class='img-logo' src="./assets/LOGO_ROXO.png">
@@ -176,25 +180,8 @@ export const Home = () => {
         </a>
       </div>
     </section>
-
     <button>Mostrar interesse</button>
     </main>
   `;
-
-  const show = document.getElementById('result');
-
-  const element = document.getElementById('submit');
-  element.addEventListener('click', () => {
-    const input = document.getElementById('input').value;
-    const response = async () => {
-      await ListPolutionCities(input).then((r) => {
-        show.innerHTML = `
-        <p id='results>${r}</p>
-        `;
-      });
-    };
-    response();
-  });
-  ListPolutionCities('guarulhos');
   return rootElement;
 };

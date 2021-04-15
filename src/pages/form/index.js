@@ -6,7 +6,6 @@ export const Form = () => {
 
   rootElement.innerHTML = `
   <div>
-    
     <img src='./assets/LOGO_ROXO.png' alt='logo'>
     <p>Deixe-nos saber como oferecer o melhor para você e o seu negócio!</p>
       <form>
