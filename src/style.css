@@ -47,10 +47,6 @@ div.rectangle {
   color: #FFFFFF;
 }
 
-/* div.api-container {
-
-} */
-
 div {
   width: 100%;
   display: flex;
@@ -156,11 +152,6 @@ form input {
 .about-air {
   color: black;
 }
-
-
-
-
-
 
 .pelicula {
   background-color: #A750AD;
