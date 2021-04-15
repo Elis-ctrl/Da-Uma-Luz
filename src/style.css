@@ -47,9 +47,9 @@ div.rectangle {
   color: #FFFFFF;
 }
 
-div.api-container {
+/* div.api-container {
 
-}
+} */
 
 div {
   width: 100%;
@@ -221,15 +221,26 @@ h5 {
   padding: 60px;
 }
 
-.btn btn-primary{
-  background: #FFFFFF;
-  border: #9C80BE solid 2px;
+.container{
+  width: 100%;
+  margin-top: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn btn-outline-primary{
   color: #43236A;
-  margin-left: 30%;
+  width: 300px;
+  background-color: transparent;
+  background-image: none;
+  border-color: #ffffff;
 }
 
 .icon-button{
   width: 60px;
+  border-radius: 50px;
+  background-color: transparent;
 }
 
 .depoiments, .energy {
