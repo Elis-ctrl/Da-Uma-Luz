@@ -32,8 +32,8 @@ export const Home = () => {
           </h5>
           <div class='about-air'>
             <p>Verifique aqui a qualidade do ar na sua cidade</p>
-            <input id='input' placeholder='São Paulo, Guarulhos etc...'>
-            <button id='submit'>clique aqui</button>
+            <input id='input' placeholder='ex: Piracicaba'>
+            <button id='submit'>Verificar</button>
             <p id='result'></p>
           </div>
         </div>
@@ -101,12 +101,12 @@ export const Home = () => {
         <h3 id="why-raizen"class="title">Qual é a melhor opção para meu negógio?</h3>
         <img class="icon-info" src="/assets/sustainable.svg" alt="biogas">
         <ul>
-          <li>Consumidores com sua tensão ABAIXO de R$40.000 mensais, têm a opção de utilizar a energia solar economizando até 20%, utilizando o processo de Geração Distribuída.</li>
-          <li>Consumidores com sua tensão ACIMA de R$40.000 mensais, devem migrar para o processo do mercado livre. É uma forma livre de consumir energia em que você pode escolher seu fornecedor de energia, preço, garantia, pagamento e prazo, podendo assim economizar até 30% dos gastos.</li>
+          <li>Consumidores com gastos em energia a partir de R$500 e ABAIXO de R$40.000 mensais, têm a opção de utilizar a energia solar economizando até 20%, aderindo ao processo de <a href='https://energia.raizen.com.br/geracao-distribuida'>Geração Distribuída</a>.</li>
+          <li>Consumidores com gastos em energia ACIMA de R$40.000 mensais, podem migrar para o <a href='https://energia.raizen.com.br/mercado-livre'>Mercado Livre</a> de energia. É uma forma livre de consumir energia em que você pode escolher seu fornecedor, preço, garantia, pagamento e prazo, podendo assim economizar até 30% dos gastos.</li>
         </ul>
 
         <h3 class="title">Por que escolher a Raízen?</h3>
-        <p>Os processos na Raízen buscam atingir o ideal de que, nada se perde, nada se cria e tudo se transforma. Com esses movimentos de criação de energias renováveis, a Raízen segue se consolidando como uma empresa integrada de energia, contribuindo para uma matriz energética mais limpa, assumindo uma posição de destaque ampliando seu portifólio de renováveis, liderando o processo de transição energética e descarbonização, acelerando o futuro.</p> 
+        <p>Os processos na Raízen buscam atingir o ideal de que nada se perde, nada se cria e tudo se transforma. Com esses movimentos de criação de energias renováveis, a Raízen segue se consolidando como uma empresa integrada de energia, contribuindo para uma matriz energética mais limpa, assumindo uma posição de destaque ampliando seu portifólio de renováveis, liderando o processo de transição energética e descarbonização, acelerando o futuro.</p> 
         <img class="icon-info" src="/assets/sustainable (1).svg" alt="biomassa"></br>
         <h6 class="benefits">Operação Segura</h6>
         <p>Somos uma das principais distribuidoras de combustíveis do Brasil, posição conquistada e mantida graças ao trabalho de parceiros engajados, com os quais estabelecemos padrões de performance e desenvolvemos iniciativas para preservar a segurança dos profissionais envolvidos nessas operações. Algumas medidas são:</p>
@@ -141,7 +141,7 @@ export const Home = () => {
             </ol>
             <div class="carousel">
               <h5 class"benefits">
-                DEPOIMENTOS:
+                DEPOIMENTOS
               </h5>
             </div>
             <div class="carousel-inner">

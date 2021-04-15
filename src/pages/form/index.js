@@ -28,19 +28,19 @@ export const Form = () => {
       <input type='consumption'
       id='consumption' 
       name='consumption' 
-      placeholder='Digite seu consumo mensal' required />
+      placeholder='Gasto médio mensal com energia (R$)' required />
       </form>
       <input class='button' 
       id='submit-form' type='submit' 
       value='Enviar'/>
+      <button id='button-back'>voltar</button>
   </div>
   `;
 
   const btnRegister = rootElement.querySelector('#submit-form');
-
+  const btnBackHome = rootElement.querySelector('#button-back');
   btnRegister.addEventListener('click', (e) => {
     e.preventDefault();
-
     const user = {
       name: rootElement.querySelector('#name').value,
       email: rootElement.querySelector('#email').value,
@@ -48,9 +48,11 @@ export const Form = () => {
       consumption: rootElement.querySelector('#consumption').value,
     };
     addData(user);
-
     onNavigate('/clapping');
   });
-
+  btnBackHome.addEventListener('click', (e) => {
+    e.preventDefault();
+    onNavigate('/');
+  });
   return rootElement;
 };

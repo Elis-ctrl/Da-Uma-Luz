@@ -47,10 +47,6 @@ div.rectangle {
   color: #FFFFFF;
 }
 
-/* div.api-container {
-
-} */
-
 div {
   width: 100%;
   display: flex;
@@ -60,8 +56,8 @@ div {
 }
 
 .img-logo {
-  height: 140px;
-  width: 150px;
+  height: 200px;
+  width: 200px;
 }
 
 .form {
@@ -306,4 +302,9 @@ ul{
   width: 40vh;
   padding: 0.5rem;
   color:black
+}
+
+#button-back{
+  color: #43236A;
+  margin-top: 10px;
 }
