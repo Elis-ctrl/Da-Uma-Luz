@@ -1,0 +1,31 @@
+[debug] [2021-04-14T00:25:50.264Z] ----------------------------------------------------------------------
+[debug] [2021-04-14T00:25:50.267Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Luciana\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js serve --only hosting
+[debug] [2021-04-14T00:25:50.267Z] CLI Version:   9.10.0
+[debug] [2021-04-14T00:25:50.267Z] Platform:      win32
+[debug] [2021-04-14T00:25:50.267Z] Node Version:  v12.19.0
+[debug] [2021-04-14T00:25:50.269Z] Time:          Tue Apr 13 2021 21:25:50 GMT-0300 (GMT-03:00)
+[debug] [2021-04-14T00:25:50.269Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2021-04-14T00:25:50.282Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-04-14T00:25:50.282Z] > authorizing via signed-in user (larissalmeida2002@gmail.com)
+[debug] [2021-04-14T00:25:50.282Z] [iam] checking project da-uma-luz-5ac78 for permissions ["firebase.projects.get"]
+[debug] [2021-04-14T00:25:50.286Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2021-04-14T00:25:50.286Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-04-14T00:25:50.621Z] <<< HTTP RESPONSE 200 {"date":"Wed, 14 Apr 2021 00:25:50 GMT","expires":"Mon, 01 Jan 1990 00:00:00 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","pragma":"no-cache","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-04-14T00:25:50.748Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/da-uma-luz-5ac78:testIamPermissions  
+ {"permissions":["firebase.projects.get"]}
+[debug] [2021-04-14T00:25:51.703Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Wed, 14 Apr 2021 00:25:51 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=755","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-04-14T00:25:51.706Z] > refreshing access token with scopes: []
+[debug] [2021-04-14T00:25:51.707Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-04-14T00:25:51.991Z] <<< HTTP RESPONSE 200 {"pragma":"no-cache","date":"Wed, 14 Apr 2021 00:25:52 GMT","expires":"Mon, 01 Jan 1990 00:00:00 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-04-14T00:25:52.257Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/da-uma-luz-5ac78 [none]
+[debug] [2021-04-14T00:25:52.729Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/da-uma-luz-5ac78 200
+[debug] [2021-04-14T00:25:52.730Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/da-uma-luz-5ac78 {"projectId":"da-uma-luz-5ac78","projectNumber":"701358828610","displayName":"da-uma-luz","name":"projects/da-uma-luz-5ac78","resources":{"hostingSite":"da-uma-luz-5ac78","storageBucket":"da-uma-luz-5ac78.appspot.com","locationId":"us-east1"},"state":"ACTIVE"}
+[debug] [2021-04-14T00:25:52.731Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/da-uma-luz-5ac78/webApps/-/config [none]
+[debug] [2021-04-14T00:25:53.418Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/da-uma-luz-5ac78/webApps/-/config 200
+[debug] [2021-04-14T00:25:53.418Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/da-uma-luz-5ac78/webApps/-/config {"projectId":"da-uma-luz-5ac78","appId":"1:701358828610:web:6b1215d5473b92558fd1db","storageBucket":"da-uma-luz-5ac78.appspot.com","locationId":"us-east1","apiKey":"AIzaSyCnji1KDoLBK9bqhRXa7_EGRPuBKuG0z_U","authDomain":"da-uma-luz-5ac78.firebaseapp.com","messagingSenderId":"701358828610"}
+[warn] !  hosting: Port 5000 is not available. Trying another port... {"metadata":{"emulator":{"name":"hosting"},"message":"\u001b[33mhosting: \u001b[39mPort 5000 is not available. Trying another port..."}}
+[info] i  hosting: Serving hosting files from: src {"metadata":{"emulator":{"name":"hosting"},"message":"Serving hosting files from: \u001b[1msrc\u001b[22m"}}
+[info] +  hosting: Local server: http://localhost:5005 {"metadata":{"emulator":{"name":"hosting"},"message":"Local server: \u001b[4m\u001b[1mhttp://localhost:5005\u001b[22m\u001b[24m"}}
