@@ -1,12 +1,13 @@
 import { Home } from './pages/home/index.js';
 import { Form } from './pages/form/index.js';
+import { Clapping } from './pages/clapping/index.js';
 
 const routeRender = () => {
   const rootDiv = document.getElementById('root');
   const routes = {
     '/': Home,
     '/form': Form,
-
+    '/clapping': Clapping,
   };
 
   rootDiv.innerHTML = '';
@@ -15,5 +16,6 @@ const routeRender = () => {
 
 window.addEventListener('popstate', routeRender);
 window.addEventListener('load', () => {
-  routeRender();
+// eslint-disable-next-line indent
+routeRender();
 });
