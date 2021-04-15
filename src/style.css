@@ -2,21 +2,18 @@
 
 * {
   margin: 0;
-  padding: 0;
   border: 0;
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
 }
 
-body{
+body {
   color: white;
   font-weight: 500;
   display: flex;
-  min-width: 50vh;
   justify-content: center;
 }
 
-main.home-element{
+main .home-element {
   box-sizing: border-box;
   display: block;
   align-items: center;
@@ -24,7 +21,7 @@ main.home-element{
 }
 /* Rectangle 1 */
 
-div.rectangle{
+div.rectangle {
   position: absolute;
   width: 358.46px;
   height: 582.89px;
@@ -36,8 +33,7 @@ div.rectangle{
   margin-bottom: 5rem
 }
 
-.rectangle-text{
-  
+.rectangle-text {
   width: 257px;
   height: 258px;
   left: 30px;
@@ -51,11 +47,11 @@ div.rectangle{
   color: #FFFFFF;
 }
 
-div.api-container{
+div.api-container {
 
 }
 
-div{
+div {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -63,21 +59,19 @@ div{
   justify-content: center;
 }
 
-img{
-  width: 60%;
-  position: relative;
-  right: 20%;
+.img-logo {
+  height: 140px;
+  width: 150px;
 }
 
-p{
+.form {
   color: #82008f;
   width: 80%;
   display: flex;
   align-items: center;
 }
 
-
-form{
+form {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -107,11 +101,24 @@ form input {
   font-size: 1.2rem;
 }
 
-.button:hover{
+.button, #botton-listener{
+  background:#82008f;
+  cursor: pointer;
+  width: 10rem;
+  color:white;
+  border-radius: 0.5rem;
+}
+
+#botton-listener {
+  height: 3rem;
+  font-size: 1.2rem;
+}
+
+.button:hover {
   background: violet;
 }
 
-#input{
+#input {
   position: absolute;
   width: 270px;
   height: 29px;
@@ -123,6 +130,7 @@ form input {
   border-radius: 5px;
   padding-left: 10px;
 }
+
 #submit {
   position: absolute;
   width: 114px;
@@ -133,7 +141,7 @@ form input {
   border-radius: 3px;
 }
 
-#results{
+#results {
   position: absolute;
   width: 270px;
   height: 29px;
@@ -153,57 +161,59 @@ form input {
 
 
 
-.pelicula{
+.pelicula {
   background-color: #A750AD;
   border-radius: 10px;
 }
 
-.container-explication{
+.container-explication {
   display: flex;
-flex-direction: row-reverse;
-flex-wrap: wrap;
-justify-content: space-between;
-align-items: flex-end;
-align-content: flex-end;
-  margin-left: 20%;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-end;
+  align-content: flex-end;
+  padding-top: 800px;
+  padding-left: 40px;
 }
 
-.explication{
+.explication {
   background-color: #A750AD;
   object-fit: cover;
   border-radius: 50px 5px 5px 5px;
 }
 
-.graphic img{
+.graphic img {
   max-width:350px;
   max-height:250px;
   width: auto;
   height: auto;
 }
 
-.title{
+.title {
   margin-top: 30px;
-  margin-left: 30px;
+  margin-bottom: 10px;
+  color: #43236A;
 }
 
-h5{
+h5 {
   margin-left: 10px;
 }
 
 /* Carousel */
 
-#items-wrapper{
+#items-wrapper {
   width: 90vw;
 }
 
-#items{
+#items {
   display: flex;
   overflow-x: auto;
   scroll-snap-type: x mandatory;
   -webkit-overflow-scrolling: touch;
 }
 
-.carousel-item{
+.carousel-item {
   border-radius: 10px;
   background-color: #A750AD;
   width: 100%;
@@ -211,16 +221,24 @@ h5{
   padding: 60px;
 }
 
-p{
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  font-weight: 1000;
+.depoiments, .energy {
+  color: white;
 }
 
-.logo img {
-  max-width:200px;
-  max-height:150px;
-  width: auto;
-  height: auto;
+.energy {
+  padding: 15px;
 }
+
+.text {
+  padding: 20px;
+}
+
+.button-form{
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+}
+
+
+
+

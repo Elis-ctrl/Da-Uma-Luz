@@ -6,8 +6,8 @@ export const Form = () => {
 
   rootElement.innerHTML = `
   <div>
-    <img src='./assets/LOGO_ROXO.png' alt='logo'>
-    <p>Deixe-nos saber como oferecer o melhor para você e o seu negócio!</p>
+    <img class="img-logo" src='./assets/logo-roxo.png' alt='logo'>
+    <p class="form">Deixe-nos saber como oferecer o melhor para você e o seu negócio!</p>
       <form>
       
       <input type="name" 
@@ -31,12 +31,12 @@ export const Form = () => {
       placeholder='Digite seu consumo mensal' required />
       </form>
       <input class='button' 
-      id='submit' type='submit' 
+      id='submit-form' type='submit' 
       value='Enviar'/>
   </div>
   `;
 
-  const btnRegister = rootElement.querySelector('#submit');
+  const btnRegister = rootElement.querySelector('#submit-form');
 
   btnRegister.addEventListener('click', (e) => {
     e.preventDefault();
