@@ -161,6 +161,13 @@ form input {
   padding: 60px;
 }
 
+
+.button-energy button{
+  background-color: #FFFFFF;
+  border: solid 1px #9C80BE;
+}
+
 .depoiments {
   color: white;
+
 }
