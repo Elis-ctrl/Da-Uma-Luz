@@ -115,7 +115,7 @@ form input {
   position: absolute;
   width: 270px;
   height: 29px;
-  left: 46px;
+  left: 346px;
   top: 274px;
   background: #FFFFFF;
   border: 2px solid #9C80BE;
@@ -127,7 +127,7 @@ form input {
   position: absolute;
   width: 114px;
   height: 30px;
-  left: 330px;
+  left: 630px;
   top: 273px;
   background: #43236A;
   border-radius: 3px;
@@ -137,8 +137,8 @@ form input {
   position: absolute;
   width: 270px;
   height: 29px;
-  left: 46px;
-  top: 329px;
+  left: 346px;
+  top: 314px;
   background: #FFFFFF;
   border: 2px solid #9C80BE;
   box-sizing: border-box;
