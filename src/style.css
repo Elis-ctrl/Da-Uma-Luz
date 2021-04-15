@@ -221,6 +221,17 @@ h5 {
   padding: 60px;
 }
 
+.btn btn-primary{
+  background: #FFFFFF;
+  border: #9C80BE solid 2px;
+  color: #43236A;
+  margin-left: 30%;
+}
+
+.icon-button{
+  width: 60px;
+}
+
 .depoiments, .energy {
   color: white;
 }
@@ -236,5 +247,4 @@ h5 {
 .button-form{
   padding-top: 20px;
   padding-bottom: 20px;
-
 }

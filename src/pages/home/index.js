@@ -43,20 +43,24 @@ export const Home = () => {
         </div>
       </div>
       <section class='energy-info'>
-        <p class="button-energy">
-          <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseExample">
-            BIOENERGIA
+        <div class="button-energy">
+          <button class="btn btn-outline-primary" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseExample">
+            <img class="icon-button" src="/assets/herbs-outline.gif" alt=bioenergia">
+            Bioenergia
           </button>
-          <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseExample">
-            BIOGÁS
+          <button class="btn btn-outline-primary" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseExample">
+            <img class="icon-button" src="/assets/arrow-rounded.gif" alt=bioenergia">
+            Biogás
           </button>
-          <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseExample">
-            BIOMASSA
+          <button class="btn btn-outline-primary" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseExample">
+            <img class="icon-button" src="/assets/commodity-outline.gif" alt=bioenergia">
+            Biomassa
           </button>
-          <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseExample">
-            ENERGIA SOLAR
+          <button class="btn btn-outline-primary" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseExample">
+          <img class="icon-button" src="/assets/solar-panel-outline.gif" alt=bioenergia">
+            Energia Solar
           </button>
-        </p>
+        </div>
         <div class="collapse" id="collapseOne">
           <div class="card card-body">
             <h6>BIOENERGIA</h6>
