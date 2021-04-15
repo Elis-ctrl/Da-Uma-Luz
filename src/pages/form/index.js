@@ -28,7 +28,7 @@ export const Form = () => {
       <input type='consumption'
       id='consumption' 
       name='consumption' 
-      placeholder='Digite seu consumo mensal' required />
+      placeholder='Gasto médio mensal com energia (R$)' required />
       </form>
       <input class='button' 
       id='submit-form' type='submit' 
