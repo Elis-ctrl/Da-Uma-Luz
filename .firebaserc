@@ -1,5 +1,6 @@
 {
   "projects": {
-    "default": "da-uma-luz"
+    "default": "da-uma-luz",
+    "da-uma-luz": "da-uma-luz-5ac78"
   }
 }
