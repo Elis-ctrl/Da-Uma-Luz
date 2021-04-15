@@ -5,7 +5,7 @@ export const Home = () => {
   const rootElement = document.createElement('div');
   rootElement.innerHTML = `
     <main class='home-element'>
-      <div class='rectangle' >
+      <div class='rectangle'>
         <img class='img-logo' src="./assets/logo-branco.png">
         <h1 class='rectangle-text'>Descubra tudo sobre energia renovável e qual a melhor opção para seu negócio ser mais sustentável</h1>
       </div>
@@ -44,8 +44,9 @@ export const Home = () => {
           </div>
         </div>
       </div>
-      <section class='energy-info'>
-        <div class="button-energy">
+      <div class="container" id="myGroup">
+        <h2 class="">Energias renováveis</h2>
+        <p class="button-energy">
           <button class="btn btn-outline-primary" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseExample">
             <img class="icon-button" src="/assets/herbs-outline.gif" alt=bioenergia">
             Bioenergia
@@ -62,17 +63,17 @@ export const Home = () => {
           <img class="icon-button" src="/assets/solar-panel-outline.gif" alt=bioenergia">
             Energia Solar
           </button>
-        </div>
-        <div class="collapse" id="collapseOne">
+        </p>
+        <div class="collapse" id="collapseOne" data-parent="myGroup">
           <div class="card card-body">
-            <h6>BIOENERGIA</h6>
+            <h6 class="">Bioenergia</h6>
             <p>A Raízen é a maior produtora de energia gerada a partir do bagaço da cana-de-açúcar, aproveitando os coprodutos da cana que são gerados a partir da produçãoo de açúcar e etanol, com capacidade atual para abastecer uma cidade como a do Rio de Janeiro por um ano, por meio de uma fonte constante e previsível, que tem seu pico de produção justamente no período mais seco do ano, quando a matriz hídrica fica mais pressionada.</p>
             <p>É uma energia limpa que reduz a emissão de CO2, um composto químico gasoso que provoca desequilíbrios no efeito estufa e a colheita da cana acontece em períodos que os reservatórios estão em baixa.</p>
           </div>
         </div>
-        <div class="collapse" id="collapseTwo">
+        <div class="collapse" id="collapseTwo" data-parent="myGroup">
           <div class="card card-body">
-            <h6>BIOGÁS</h6>
+            <h6>Biogás</h6>
             <p>O biogás é resultado de um complexo processo produtivo, em que biodigestores convertem a matéria orgânica proveniente dos processamentos da cana-de-açúcar, como a torta de filtro (resíduos restantes da purificação do caldo da cana) e a vinhaça (água restante do processo de destilação), em metano e CO2, o chamado biogás. Contribui para tornar a matriz energética brasileira mais limpa, aumentando o potencial de energia elétrica.</p>
             <p>Quando em motogeradores, esse biogás é transformado em energia elétrica limpa e é por isso que temos nossa planta de biogás em Guariba, em São Paulo, com 21 MW de capacidade instalada. Além de ser uma grande fonte de energia renovável, é um substituto do diesel na forma de biometano.</p>
             <p>São dois processos distintos:</p>
@@ -84,19 +85,19 @@ export const Home = () => {
             </ul>
           </div>
         </div>
-        <div class="collapse" id="collapseThree">
+        <div class="collapse" id="collapseThree" data-parent="myGroup">
           <div class="card card-body">
-            <h6>BIOMASSA</h6>
+            <h6>Biomassa</h6>
             <p>Biomassa é todo tipo de matéria orgânica que possibilita a produção de energia, sendo ela não fóssil. A energia de biomassa, que já responde por 6% da matriz energética nacional, é obtida pela queima de materiais orgânicos, como bagaço de cana, casca de arroz e cavaco de madeira. Em comparação com os combustíveis fósseis, esses resíduos geram menos emissões de gases causadores do efeito estufa.</p>
           </div>
         </div>
-        <div class="collapse" id="collapseFour">
+        <div class="collapse" id="collapseFour" data-parent="myGroup">
           <div class="card card-body">
-            <h6>ENERGIA SOLAR</h6>
+            <h6>Energia Solar</h6>
             <p>Em mais um passo para o futuro, desenvolvemos a maior planta de energia solar do estado de São Paulo, um projeto piloto em Piracicaba. Sua potência instalada é de 1,3 MWp, suficiente para abastecer um bairro da cidade por um ano. São 3.800 placas solares ocupando um espaço de 40 mil m², o equivalente a dois campos de futebol. Com a planta, alcançamos um novo nível de inovação, que representa a busca por uma gestão energética mais sustentável, baseada em energia limpa, perene e econômica.</p>
           </div>
         </div>
-      </section>
+      </div>
 
       <div class="text">
         <h3>Qual é a melhor opção para meu negógio?</h3>
