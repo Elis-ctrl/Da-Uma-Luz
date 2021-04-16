@@ -119,7 +119,7 @@ export const Home = () => {
         <h6 class="benefits">Garantia de Qualidade</h6>
         <p>Detemos certificações e registros que atestam a qualidade dos nossos produtos e a excelência dos nossos processos.</p>
         <img class="icon-info" src="/assets/guarantee.svg" alt="save">
-        <h6 class="benefits">Desenvolcimento do Entorno</h6>
+        <h6 class="benefits">Desenvolvimento do Entorno</h6>
         <p>Além de gerar empregos e movimentar economias, buscamos promover a transformação social nas localidades em que atuamos, ampliando oportunidades para jovens, adultos e crianças.</p>
         <img class="icon-info" src="/assets/responsibility.svg" alt="save">
         <h3 class="title">Vantagens de ser uma empresa com selo Raízen:</h3>
